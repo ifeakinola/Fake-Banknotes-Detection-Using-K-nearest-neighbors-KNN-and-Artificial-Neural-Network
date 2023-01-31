@@ -1,1 +1,9 @@
 # Fake-Banknotes-Detection-Using-K-nearest-neighbors-KNN-and-Artificial-Neural-Network
+
+The aim of this work is to use machine learning algorithms specifically K-nearest neighbors (KNN), Artificial Neural Network to detect the authenticity or not of banknotes. It is a classification problem where the output to be predicted is binary. The features of a banknotes are given to the machine learning algorithm as input which can then classify if the note is genuine or fake.
+
+# Dataset
+The dataset used for this task was obtained from <a href="https://archive.ics.uci.edu/ml/datasets/banknote+authentication">UCI Machine Learning Repository.</a> The dataset contains 1372 records of information from images that were taken from authentic and fake banknote-like samples. An industrial camera typically used for inspecting print materials was utilized for digitization and the final images have 400x 400 pixels.
+
+# Results analysis
+The precision in the classification report of the KNN algorithm and Neural Network tells us how many predicted fake notes turned out to be fake, while the recall explains how many fake notes were predicted correctly. Although the aim of this task was to correctly identify fake notes, the false positives and false negatives are of great significance in the sense that the fake notes should not go undetected even though it could be a false alarm and it’s also important to have the ‘false alarm’ at the barest minimum. The F1 score gives us a measure of precision and recall at the same time and with the F1 score of 1.0 for KNN and 0.99 of the Neural Network, we can say that KNN algorithm and Neural Network are well suited to this task. It is essential to state that this study did not examine the significance of the outliers detected on the performance of the models.
